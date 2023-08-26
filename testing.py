@@ -5,7 +5,7 @@ import requests
 import pandas as pd
 from flask import Flask, request,render_template
 
-headers = {'x-api-key' : '8f4275b4fe0e42eca9fcefa1936c1d60'}
+headers = {'x-api-key' : ''}
 response = requests.get("https://api-v3.mbta.com/routes?filter[type]=0,1", headers=headers)
 finished = response.json()
 lines = []
